@@ -148,18 +148,20 @@ div.weather {
 
 /* responsive mobile =================== */
 @media (max-width: 767px) {
+  /* clock */
   h2#clock {
-    font-size: 4.2rem;
+    font-size: 4rem;
     top: 24%;
     left: 50%;
     transform: translate(-50%, -24%);
   }
-
+  /* login-form, greeting  */
   form.login-form {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: none;
   }
-  form.login-form,
+  /* form.login-form,
   form.login-form + * {
     top: 38.4%;
     left: 50%;
@@ -179,15 +181,19 @@ div.weather {
     border: 2px solid #fff;
     padding: 5px;
     margin-top: 10px;
-  }
-  h1.greeting {
-    font-size: 1.6rem;
+  } */
+  .greeting {
+    display: none;
+    /* font-size: 1.6rem; */
   }
 
   form.todo-form {
-    top: 52%;
+    /* top: 52%;
     left: 50%;
-    transform: translate(-50%, -52%);
+    transform: translate(-50%, -52%); */
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
   }
   form.todo-form > * {
     font-size: 1.3rem;
@@ -198,7 +204,8 @@ div.weather {
     width: 19.4rem;
   }
   ul.todo-list {
-    top: 56.6%;
+    /* top: 56.6%; */
+    top: 41.2%;
   }
   ul.todo-list li {
     font-size: 1.1rem;
