@@ -9,12 +9,7 @@ const quotes = [
   },
   {
     quote: "먼저 문제를 풀고 그 다음에 개발을 하라.",
-    author: "-John Johnson, 미국의 유명한 소프트웨어 강사",
-  },
-  {
-    quote:
-      "항상 이런 생각으로 개발에 임하라. “내 소스를 유지보수하게 되는 개발자가 내가 어디 살고 있는지 알고 있는 과격한 사이코패스일 것이다.”",
-    author: "-Martin Golding",
+    author: "-John Johnson, 미국의 소프트웨어 강사",
   },
 ];
 const quote = document.querySelector("#quote span:first-child");

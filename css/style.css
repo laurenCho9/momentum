@@ -128,7 +128,7 @@ ul.todo-list li button {
 }
 
 /* quote */
-div#quote {
+div.quote {
   bottom: 3%;
   left: 2%;
   transform: translate(-2%, -3%);
@@ -144,4 +144,91 @@ div.weather {
   transform: translate(-2%, -3%);
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+/* responsive mobile =================== */
+@media (max-width: 767px) {
+  h2#clock {
+    font-size: 4.2rem;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -24%);
+  }
+
+  form.login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  form.login-form,
+  form.login-form + * {
+    top: 38.4%;
+    left: 50%;
+    transform: translate(-50%, -38.4%);
+  }
+  form.login-form > * {
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  form.login-form > input[type="text"] {
+    border-bottom: 2px solid #fff;
+    padding: 5px 5px 5px 0;
+    text-indent: 5px;
+  }
+  form.login-form > input[type="submit"] {
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  h1.greeting {
+    font-size: 1.6rem;
+  }
+
+  form.todo-form {
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+  }
+  form.todo-form > * {
+    font-size: 1.3rem;
+  }
+  form.todo-form > input[type="text"] {
+    padding: 5px 5px 5px 0px;
+    text-indent: 5px;
+    width: 19.4rem;
+  }
+  ul.todo-list {
+    top: 56.6%;
+  }
+  ul.todo-list li {
+    font-size: 1.1rem;
+  }
+  ul.todo-list li button {
+    font-size: 1rem;
+  }
+
+  div.quote {
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40%);
+    line-height: 1.5;
+  }
+  div.quote span {
+    text-align: center;
+  }
+
+  div.weather {
+    top: 5%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 10%);
+  }
+  div.weather span {
+    text-align: center;
+  }
 }
