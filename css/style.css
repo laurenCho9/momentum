@@ -1,3 +1,147 @@
+/* js - login event */
 .hidden {
   display: none;
+}
+
+/* css - style */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 10px;
+}
+img {
+  width: 100%;
+  height: 100vh;
+}
+body > h2,
+form,
+h1,
+ul,
+div {
+  position: absolute;
+}
+
+/* clock */
+h2#clock {
+  font-size: 7.8rem;
+  font-weight: 800;
+  font-style: italic;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -42%);
+}
+
+/* login-form, greeting */
+form.login-form,
+form.login-form + * {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+form.login-form > *,
+h1.greeting {
+  font-weight: 700;
+  color: #fff;
+  background-color: transparent;
+}
+form.login-form > * {
+  font-size: 2.8rem;
+}
+form.login-form > input[type="text"] {
+  outline: none;
+  border: none;
+  border-bottom: 4px solid #fff;
+  padding: 10px 20px 10px 0;
+  text-indent: 20px;
+}
+form.login-form > input[type="text"]::placeholder {
+  color: #fff;
+  text-align: center;
+}
+form.login-form > input[type="submit"] {
+  border: 4px solid #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+h1.greeting {
+  font-size: 3.4rem;
+}
+
+/* todo-form */
+form.todo-form {
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -63%);
+}
+form.todo-form > * {
+  font-weight: 500;
+  color: #fff;
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+form.todo-form > input[type="text"] {
+  padding: 5px 10px 5px 0px;
+  text-indent: 10px;
+  width: 23.8rem;
+}
+form.todo-form > input[type="text"]::placeholder {
+  color: #fff;
+  text-align: center;
+}
+form.todo-form > input[type="text"]:required {
+  border-color: transparent;
+  border-bottom-color: #fff;
+  border-width: 2px;
+}
+form.todo-form > input[type="text"]:focus {
+  outline-color: pink;
+  outline-width: 2px;
+  outline-style: double;
+}
+ul.todo-list {
+  top: 66.6%;
+  left: 51%;
+  transform: translate(-51%, 0);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+ul.todo-list li {
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-bottom: 5px;
+}
+ul.todo-list li button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+/* quote */
+div#quote {
+  bottom: 3%;
+  left: 2%;
+  transform: translate(-2%, -3%);
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* weather */
+div.weather {
+  top: 3%;
+  right: 2%;
+  transform: translate(-2%, -3%);
+  font-size: 1.8rem;
+  font-weight: 600;
 }
